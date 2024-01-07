@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #fafafa;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  margin-top: 85px;
+}
+.main_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.167px;
+}
+.main_header :first-child {
+  color: #4d4f62;
+  font-size: 24px;
+  font-weight: 275;
+}
+.main_header :last-child {
+  color: #4d4f62;
+  font-size: 24px;
+  font-weight: 600;
+}
+#header_para {
+  color: #4d4f62;
+  width: 311px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  letter-spacing: 0.104px;
+  opacity: 0.5;
+  text-align: center;
+  margin-bottom: 76px;
+}
+.boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 76px;
+}
+.box {
+  width: 311px;
+  height: 222px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.line {
+  width: 311px;
+  height: 3.552px;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px 8px 0 0;
+}
+.line-supervision {
+  background: #44d3d2;
+}
+.line-teambuilder {
+  background: #ea5454;
+}
+.line-karma {
+  background: #fcae4a;
+}
+.line-calculator {
+  background: #549ef2;
+}
+.content {
+  padding: 27px 28px 28px 29px;
+}
+.content img {
+  margin: 33px 0 0 190px;
+}
+.box .content h3 {
+  color: #4d4f62;
+  font-size: 20px;
+  font-weight: 600;
+}
+.box .content p {
+  color: #4d4f62;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px; /* 176.923% */
+  letter-spacing: 0.09px;
+  opacity: 0.5;
+  margin-top: 1px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    margin-top: 80px;
+  }
+  .main_header {
+    letter-spacing: 0.25px;
+  }
+  .main_header :first-child {
+    font-size: 36px;
+  }
+  .main_header :last-child {
+    font-size: 36px;
+  }
+  #header_para {
+    width: 540px;
+    margin-bottom: 64px;
+  }
+  .boxes {
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+  .box {
+    width: 350px;
+    height: 250px;
+  }
+  .column {
+    gap: 30px;
+  }
+  .row {
+    margin-top: 136px;
+  }
+  .line {
+    width: 350px;
+    height: 4px;
+  }
+  .content {
+    padding: 32px;
+  }
+}
